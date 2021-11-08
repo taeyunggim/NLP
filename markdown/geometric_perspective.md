@@ -21,3 +21,22 @@
 
 - Binary Classification in 2-D
 - DNN can do classifie hard
+
+### last
+
+- Our objective becomes:
+    - 세상에 존재하는 어떤 미지의 확률 분포 함수를 모사(approximate)하자
+- + Probabilistic Perspective
+    - 확률 분포 P(x)와 P(y|x)로부터 데이터를 수집하여,
+    - 해당 데이터를 가장 잘 설명하는 확률 분포 함수의 파라미터를 찾자
+        - Maximum Likelihood Estimation
+        - Gradient Descent using Back-propagation
+    - 또는 두 확률 분포를 비슷하게 만들자
+        - Minimize Cross Entropy (or KL-Divergence)
+- + Geometric Perspective
+    - 데이터란 저차원의 manifold에 분포하고 있으며, 여기에 약간의 노이즈가 추가 되어 있는 것
+        - 노이즈란 task에 띠라서 다양하게 해석 가능 할 것
+    - 따라서 해당 manifold를 배울 수 있다면, 더 낮은 차원으로 효율적인 맵핑(or project)이 가능
+        - Non-linear dimension reduction
+- + Representation Learning, Again
+    - 낮은 차원으로의 표현을 통해, 차원의 저주(curse of dimensionality)를 벗어나 효과적인 학습이 가능
